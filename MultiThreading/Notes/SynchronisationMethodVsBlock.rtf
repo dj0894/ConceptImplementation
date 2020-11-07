@@ -1,0 +1,560 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Monaco;\f2\fnil\fcharset0 HelveticaNeue-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red31\green36\blue45;\red255\green255\blue255;\red162\green70\blue22;
+\red63\green69\blue80;\red190\green191\blue193;}
+{\*\expandedcolortbl;;\cssrgb\c16078\c18824\c23137;\cssrgb\c100000\c100000\c100000;\cssrgb\c70196\c35294\c10588;
+\cssrgb\c31373\c34118\c38824;\cssrgb\c79216\c79608\c80000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid1\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid101\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid201\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid301\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid401\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid501\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid6}
+{\list\listtemplateid7\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid601\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid7}
+{\list\listtemplateid8\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid701\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid8}
+{\list\listtemplateid9\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid801\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid9}
+{\list\listtemplateid10\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid901\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid10}
+{\list\listtemplateid11\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid1001\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid11}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}{\listoverride\listid7\listoverridecount0\ls7}{\listoverride\listid8\listoverridecount0\ls8}{\listoverride\listid9\listoverridecount0\ls9}{\listoverride\listid10\listoverridecount0\ls10}{\listoverride\listid11\listoverridecount0\ls11}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl920\partightenfactor0
+
+\f0\fs72 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Notes - Thread Synchronization\
+\pard\pardeftab720\sl520\sa210\partightenfactor0
+
+\fs48 \cf2 Thread Synchronization\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 \cb3 \'a0 Thread synchronization is used to solve concurrency problems that exist in parallel processing. Concurrency problem exist when more than one thread is accessing the same shared resource.\cb1 \
+\cb3 E.g.\cb1 \
+\cb3 1) More than one transaction is being performed on the same account\cb1 \
+\cb3 2) Multiple resources are booking tickets for the same train from different locations.\cb1 \
+\cb3 etc.\cb1 \
+\pard\pardeftab720\sl520\sa210\partightenfactor0
+
+\fs48 \cf2 \cb3 Synchronization in Java Threads\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 \cb3 It can be achieved through\cb1 \
+\cb3 \'a0 1) Synchronized methods\cb1 \
+\cb3 \'a0 2) Synchronized block\cb1 \
+\cb3 \'a0 3) Locks discussed later.\cb1 \
+\pard\pardeftab720\sl520\sa210\partightenfactor0
+
+\fs48 \cf2 \cb3 synchronized method\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 \cb3 Consider the class Sample\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls1\ilvl0
+\f1\fs24 \cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 class\cf2 \strokec2  Sample \{\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf4 \strokec4 synchronized\cf2 \strokec2  \cf4 \strokec4 void\cf2 \strokec2  f() \{...\}\cf5 \cb1 \strokec5 \
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \}\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \strokec2 Consider Three threads T1, T2, T3 and two objects for Sample they are A,B.\cb1 \
+\cb3 T1\'a0 ..........A.f();\'a0 locks A and proceeds\cb1 \
+\cb3 T2\'a0 ..........B.f();\'a0 locks B and proceeds\cb1 \
+\cb3 T3\'a0 ..........A.f();\'a0 wait till T1 unlocks A.\cb1 \
+\cb3 To run a synchronized method object must be locked.\cb1 \
+\pard\pardeftab720\sl520\sa210\partightenfactor0
+
+\fs48 \cf2 \cb3 synchronized block\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 \cb3 When synchronization is not required for the entire method i.e only certain part of the code must be synchronized then we use synchronized block.\'a0 \'a0 \'a0 \'a0\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0
+\f1\fs24 \cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 synchronized\cf2 \strokec2 ( \cf4 \strokec4 object\cf2 \strokec2  ) \{\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2   \cf6 \strokec6 // operations over the object\cf5 \cb1 \strokec5 \
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \}\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \strokec2 The above code is executed only after obtaining lock over the object.\cb1 \
+\pard\pardeftab720\sl520\sa210\partightenfactor0
+
+\fs48 \cf2 \cb3 Thread Safe Code or Re-entrant code:-\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 \cb3 When a code block is safe from concurrency problems then the code is referred as thread safe or re-entrant.In case of the below operation
+\f2\b \'a0incr()
+\f0\b0 \'a0operation is considered as thread safe or re-entrant.\cb1 \
+\pard\pardeftab720\sl520\sa210\partightenfactor0
+
+\fs48 \cf2 \cb3 Example -\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 \cb3 In the below example try removing synchronized keyword before the incr() operation and check the result. You will find inconsistent result. By making the method\'a0
+\f2\b synchronized
+\f0\b0 , we are forcing the thread to lock the object before performing the
+\f2\b \'a0incr()
+\f0\b0 \'a0operation. Though control is intentionally passed to other thread, other thread won't be able to proceed with the operation as it need to first lock (obj) before proceeding forward.\cb1 \
+\cb3 i.e. lets assume\'a0
+\f2\b t1
+\f0\b0 \'a0locks\'a0
+\f2\b obj
+\f0\b0 \'a0then\'a0
+\f2\b t2
+\f0\b0 \'a0should wait till\'a0
+\f2\b t1
+\f0\b0 \'a0releases the lock, hence object is modified by only one thread at a time and you will see consistent results.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls3\ilvl0
+\f1\fs24 \cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 class\cf2 \strokec2  Sample \{\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf4 \strokec4 private\cf2 \strokec2  \cf4 \strokec4 int\cf2 \strokec2  x;\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf4 \strokec4 public\cf2 \strokec2  \cf4 \strokec4 int\cf2 \strokec2  getX() \{\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf4 \strokec4 return\cf2 \strokec2  x;\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \}\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf4 \strokec4 public\cf2 \strokec2  \cf4 \strokec4 void\cf2 \strokec2  setX(\cf4 \strokec4 int\cf2 \strokec2  x) \{\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf4 \strokec4 this\cf2 \strokec2 .x = x;\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \}\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf6 \strokec6 /*\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls3\ilvl0\cf6 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6      * Try removing synchronized. \cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf6 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6      */\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf4 \strokec4 public\cf2 \strokec2  \cf4 \strokec4 synchronized\cf2 \strokec2  \cf4 \strokec4 void\cf2 \strokec2  incr() \{\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 		\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf6 \strokec6 // read the value of x.\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf4 \strokec4 int\cf2 \strokec2  y = getX();\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // Increment the value\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	y++;\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 		\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // Just assume if control is switched to \cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // some other thread and it too looks at\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // the old value of x and proceeds with \cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // modification. Such scenarios lead to \cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // in consistent results.\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // To simulate such scenarios lets us just\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // pass the control to some other thread. \cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf6 \strokec6 // with sleep this thread will go to blocked state\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf6 \strokec6 // for the given time interval, hence other thread\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf6 \strokec6 // will get a chance.\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf4 \strokec4 try\cf2 \strokec2  \{ Thread.sleep(1); \} \cf4 \strokec4 catch\cf2 \strokec2 (Exception e) \{\}\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 		\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // set x to new value.\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	setX(y);\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \}\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \}\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls3\ilvl0\cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 class\cf2 \strokec2  MyThread \cf4 \strokec4 extends\cf2 \strokec2  Thread \{\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     Sample obj;\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf4 \strokec4 public\cf2 \strokec2  MyThread(Sample obj) \{\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf4 \strokec4 this\cf2 \strokec2 .obj = obj;\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \}\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf4 \strokec4 public\cf2 \strokec2  \cf4 \strokec4 void\cf2 \strokec2  run() \{\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	obj.incr();\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \}\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \}\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls3\ilvl0\cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 public\cf2 \strokec2  \cf4 \strokec4 class\cf2 \strokec2  Main \{\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf4 \strokec4 public\cf2 \strokec2  \cf4 \strokec4 static\cf2 \strokec2  \cf4 \strokec4 void\cf2 \strokec2  main(String[] args) \{\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	Sample obj = \cf4 \strokec4 new\cf2 \strokec2  Sample();\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	obj.setX(10);\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 		\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // In this case both the threads t1 and t2\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // are sharing the same Sample object obj.\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // Both the threads will try to perform the\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf6 \strokec6 // increment operation simultaneously.\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	MyThread t1 = \cf4 \strokec4 new\cf2 \strokec2  MyThread(obj);\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	MyThread t2 = \cf4 \strokec4 new\cf2 \strokec2  MyThread(obj);\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 		\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	t1.start();\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	t2.start();\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf6 \strokec6 // Here main thread called the join operation \cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf6 \strokec6 // on t1 and t2. join() operations waits for \cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf6 \strokec6 // thread to complete before returning.		\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf4 \strokec4 try\cf2 \strokec2  \{\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	    t1.join();\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2             t2.join();\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\} \cf4 \strokec4 catch\cf2 \strokec2  (InterruptedException e) \{\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	    e.printStackTrace();\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\}	\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	System.\cf4 \strokec4 out\cf2 \strokec2 .println( obj.getX() );		\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \}\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls3\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \}\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\fs36 \cf2 \strokec2 \uc0\u8232 \
+\pard\pardeftab720\sl520\sa210\partightenfactor0
+
+\fs48 \cf2 \cb3 Synchronizing static data operations -\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 \cb3 Is the below increment() operation thread-safe ?\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls4\ilvl0
+\f1\fs24 \cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 class\cf2 \strokec2  Sample \{\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \cf4 \strokec4 static\cf2 \strokec2  \cf4 \strokec4 int\cf2 \strokec2  a = 5;\cf5 \cb1 \strokec5 \
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \cf4 \strokec4 int\cf2 \strokec2  b = 10;\cf5 \cb1 \strokec5 \
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \cf4 \strokec4 public\cf2 \strokec2  \cf4 \strokec4 synchronized\cf2 \strokec2  \cf4 \strokec4 void\cf2 \strokec2  increment( ) \{\cf5 \cb1 \strokec5 \
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0 \'a0 \'a0 \'a0 a++;\cf5 \cb1 \strokec5 \
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	\'a0b++;\cf5 \cb1 \strokec5 \
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \}\cf5 \cb1 \strokec5 \
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0 \'a0\cf6 \strokec6 // ....\cf5 \cb1 \strokec5 \
+\ls4\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \}\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \strokec2 Answer is NO. Because we made it synchronized we may think that it is thread-safe but it is not. And it is because of the static variable a. Lets assume that there are two objects for Sample, in that case both of them will share the same copy of a because it is a class member, where as they get different copies of b, because b is non static i.e. the instance member and each instance will get a separate copy of b.\cb1 \
+\cb3 Assume Thread 1 invoked the increment method over the first object and Thread 2 invoked the increment method over the second object. Because the increment() method is non-static and it is synchronized, object should be locked before getting into the method.\cb1 \
+\cb3 Here Thread1 locks the first object and gets in and also Thread 2 locks the second object and gets in, because both are different objects and hence both the thread acquire locks and they both proceed with the operation.\cb1 \
+\cb3 You can see that b++ is not having any issues, because both the threads are operating on different copies of b, but what about a++ it is still not thread safe.\cb1 \
+\pard\pardeftab720\sl520\sa210\partightenfactor0
+
+\fs48 \cf2 \cb3 Solution 1 -\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls5\ilvl0
+\f1\fs24 \cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 class\cf2 \strokec2  Sample \{\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \cf4 \strokec4 static\cf2 \strokec2  \cf4 \strokec4 int\cf2 \strokec2  a = 5;\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \cf4 \strokec4 int\cf2 \strokec2  b = 10;\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \cf4 \strokec4 public\cf2 \strokec2 \'a0 \cf4 \strokec4 void\cf2 \strokec2  increment( ) \{\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf6 \strokec6 // lock the Class object before modifying\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf6 \strokec6 // static content.\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf4 \strokec4 synchronized\cf2 \strokec2 (Sample.\cf4 \strokec4 class\cf2 \strokec2 ) \{\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2             a++;\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0 \'a0 \'a0 \'a0\}\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \'a0 \'a0 \cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf6 \strokec6 // lock the object before modifying \cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2         \cf6 \strokec6 // instance members. \'a0 \'a0\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0 \'a0 \'a0 \'a0\cf4 \strokec4 synchronized\cf2 \strokec2 (\cf4 \strokec4 this\cf2 \strokec2 ) \{\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	 \'a0 \'a0b++;\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0 \'a0 \'a0  \}\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \}\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0 \'a0\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf6 \strokec6 // ....\cf5 \cb1 \strokec5 \
+\ls5\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \}\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \strokec2 In this case the increment() operation is thread-safe, because for modifying the static member 'a' we are locking the class object, Sample.class returns a reference to class object and synchronized block will acquire lock over the object and then proceed forward with the operation. And for b++ we are locking the current object using the this reference. And hence both the operations are now thread-safe, as we properly locked the corresponding object before modification.\cb1 \
+\pard\pardeftab720\sl520\sa210\partightenfactor0
+
+\fs48 \cf2 \cb3 Solution 2 -\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls6\ilvl0
+\f1\fs24 \cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 class\cf2 \strokec2  Sample \{\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \cf4 \strokec4 static\cf2 \strokec2  \cf4 \strokec4 int\cf2 \strokec2  a = 5;\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \cf4 \strokec4 int\cf2 \strokec2  b = 10;\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf6 \strokec6 // This method is static and hence it locks the Class object.\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \cf4 \strokec4 public\cf2 \strokec2  \cf4 \strokec4 static\cf2 \strokec2  \cf4 \strokec4 synchronized\cf2 \strokec2  \cf4 \strokec4 void\cf2 \strokec2  incrementA( ) \{\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	a++;\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \}\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf6 \strokec6 // This method is non static and hence it locks the object\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf6 \strokec6 // on which it is invoked.\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \cf4 \strokec4 public\cf2 \strokec2  \cf4 \strokec4 synchronized\cf2 \strokec2  \cf4 \strokec4 void\cf2 \strokec2  increment( ) \{\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0 \'a0 \'a0 \'a0incrementA();\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	b++;\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0 \'a0 \}\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0 \'a0\cf6 \strokec6 // ....\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \cb1 \strokec5 \
+\ls6\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \}\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \strokec2 Create a static method for incrementing a and declare it as synchronized, so that when the thread enters this method it locks the class object. Just remember that whenever you are modifying the static content in a multi-threaded environment you should lock the class object to make your code thread-safe.\cb1 \
+\pard\pardeftab720\sl520\sa210\partightenfactor0
+
+\fs48 \cf2 \cb3 Issue with synchronized methods -\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 \cb3 Synchronized methods doesn't always solve concurrency problems. Lets consider a simple List class and assume that the size() and add() operations are synchronized\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls7\ilvl0
+\f1\fs24 \cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 class\cf2 \strokec2  List \{\cf5 \cb1 \strokec5 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls7\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     ...\cf5 \cb1 \strokec5 \
+\ls7\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf4 \strokec4 public\cf2 \strokec2  \cf4 \strokec4 synchronized\cf2 \strokec2  \cf4 \strokec4 int\cf2 \strokec2  size()\{\cf5 \cb1 \strokec5 \
+\ls7\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	...\cf5 \cb1 \strokec5 \
+\ls7\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \}\cf5 \cb1 \strokec5 \
+\ls7\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \cf4 \strokec4 public\cf2 \strokec2  \cf4 \strokec4 synchronized\cf2 \strokec2  \cf4 \strokec4 void\cf2 \strokec2  add(Object value) \{\cf5 \cb1 \strokec5 \
+\ls7\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 	....\cf5 \cb1 \strokec5 \
+\ls7\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2     \}\cf5 \cb1 \strokec5 \
+\ls7\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \}\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \strokec2 You can think that there is no concurrency issue here. But, lets analyze a simple scenario consider that list should not contain more than 5 elements, and assume that list is already having 4 elements and two threads are trying to insert an element into the list.\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f2\b \cf2 \cb3 Thread 1 -
+\f0\b0 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls8\ilvl0
+\f1\fs24 \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 1) \cf4 \strokec4 if\cf2 \strokec2  (list.size() < 5) \{\cf5 \cb1 \strokec5 \
+\ls8\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 2) 	list.add(value1);\cf5 \cb1 \strokec5 \
+\ls8\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2    \}\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f2\b\fs36 \cf2 \cb3 \strokec2 Thread 2 -
+\f0\b0 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls9\ilvl0
+\f1\fs24 \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 a) \cf4 \strokec4 if\cf2 \strokec2  (list.size() < 5) \{\cf5 \cb1 \strokec5 \
+\ls9\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 b) 	list.add(value2);\cf5 \cb1 \strokec5 \
+\ls9\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2    \}\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \strokec2 Lets assume this execution sequence\'a0
+\f2\b (1)(a)(2)(b)
+\f0\b0 \'a0in this case both threads will see that list size is 4 and is less than 5. Hence both will add an element into the list, which makes the list size as 6 violating the condition. You can see the issue is not resolved even with both\'a0
+\f2\b size()
+\f0\b0 \'a0and\'a0
+\f2\b add()
+\f0\b0 \'a0being synchronized methods.\cb1 \
+\pard\pardeftab720\sl520\sa210\partightenfactor0
+
+\fs48 \cf2 \cb3 Solution -\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 \cb3 You should apply thread synchronization at operation level with the help of synchronized block. i.e.\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f2\b \cf2 \cb3 Thread 1 -
+\f0\b0 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls10\ilvl0
+\f1\fs24 \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 1) synhronized(list) \{\cf5 \cb1 \strokec5 \
+\ls10\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 2)   \cf4 \strokec4 if\cf2 \strokec2  (list.size() < 5) \{\cf5 \cb1 \strokec5 \
+\ls10\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 3) 	list.add(value1);\cf5 \cb1 \strokec5 \
+\ls10\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2      \}\cf5 \cb1 \strokec5 \
+\ls10\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2    \}\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f2\b\fs36 \cf2 \cb3 \strokec2 Thread 2 -
+\f0\b0 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls11\ilvl0
+\f1\fs24 \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 a) \cf4 \strokec4 synchronized\cf2 \strokec2 (list) \{\cf5 \cb1 \strokec5 \
+\ls11\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 b)   \cf4 \strokec4 if\cf2 \strokec2  (list.size() < 5) \{\cf5 \cb1 \strokec5 \
+\ls11\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 c) 	list.add(value2);\cf5 \cb1 \strokec5 \
+\ls11\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2      \}\cf5 \cb1 \strokec5 \
+\ls11\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2    \}\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \strokec2 Now consider the execution sequence
+\f2\b \'a0(1)(a)(2)(3)(b)(c)
+\f0\b0 \cb1 \
+\cb3 You can see that\'a0
+\f2\b list
+\f0\b0 \'a0object is locked by\'a0
+\f2\b Thread1
+\f0\b0 \'a0and hence even when the control switched to\'a0
+\f2\b Thread2
+\f0\b0 \'a0it can not proceed as the lock is with Thread1. And\'a0
+\f2\b Thread1
+\f0\b0 \'a0will add the element where as\'a0
+\f2\b Thread2
+\f0\b0 \'a0will fail.\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f2\b \cf2 \cb3 So when it comes to synchronizing operations synchronized blocks are always better choice over synchronized methods.
+\f0\b0 \cb1 \
+}
