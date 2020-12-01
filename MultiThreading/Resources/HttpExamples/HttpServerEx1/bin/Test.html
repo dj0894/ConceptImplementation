@@ -1,0 +1,31 @@
+
+<html>
+  <body>
+  
+     <form action="http://localhost:8000/abc">
+        Send GET request
+        Name <input type="text" name="name" />
+        <input type="submit" value="click" />
+     </form>
+     
+     <br/>
+     
+     <form action="http://localhost:8000/abc" method="post">
+        Send POST request
+        Name <input type="text" name="name" />
+        <input type="submit" value="click" />
+     </form>
+     
+     <br />
+     
+     <form action="http://localhost:8000/abc" method="post" enctype="multipart/form-data">
+        Send multipart request
+        Name <input type="text" name="name" />
+        File <input type="file" name="attachment" />
+        <input type="submit" value="click" />
+     </form>
+     
+     
+     
+  </body>
+</html>
